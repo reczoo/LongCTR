@@ -1,0 +1,47 @@
+base_config: ./config/sdim_config/
+base_expid: SDIM_default
+dataset_id: KuaiVideo_x2
+
+dataset_config:
+    KuaiVideo_x2:
+        data_root: ./data/
+        data_format: parquet
+        train_data: ./data/KuaiVideo_x2/train.parquet
+        valid_data: ./data/KuaiVideo_x2/valid.parquet
+        test_data: ./data/KuaiVideo_x2/test.parquet
+        user_info: ./data/KuaiVideo_x2/user_info.parquet
+        item_info: ./data/KuaiVideo_x2/item_info.parquet
+        rebuild_dataset: False
+        feature_cols:
+            - {name: user_index, active: True, dtype: int, type: meta}
+            - {name: item_index, active: True, dtype: int, type: meta}
+            - {name: seq_len, active: True, dtype: int, type: meta}
+            - {name: item_id, active: True, dtype: int, type: categorical, vocab_size: 101790, source: item}
+            - {name: image_emb_dim64, active: True, dtype: float, type: embedding, source: item, 
+               embedding_dim: 64, feature_encoder: "nn.Identity()"}
+        label_col: {name: is_click, dtype: float}
+
+tuner_space:
+    model_root: './checkpoints/'
+    embedding_dim: 64
+    dnn_hidden_units: [[1024, 512, 256]]
+    attention_dim: 512
+    num_heads: 1
+    use_qkvo: True
+    attention_dropout: 0.1
+    reuse_hash: False
+    hash_bits: [4, 8, 16, 32]
+    num_hashes: [16, 32]
+    l2_norm: False
+    short_seq_len: 50
+    net_dropout: 0.1
+    embedding_regularizer: 1.e-4
+    batch_norm: True
+    learning_rate: 1.e-3
+    batch_size: 2048
+    seed: 20242025
+    group_id: user_index
+    metrics: [[gAUC, AUC, logloss]]
+    monitor: "gAUC"
+    max_len: 500
+    accumulation_steps: 1

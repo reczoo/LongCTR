@@ -1,0 +1,344 @@
+DIN_Ebnerd_small_x1_001_ccf6def6:
+    accumulation_steps: 1
+    attention_dropout: 0.1
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    din_sequence_field: click_history
+    din_target_field: item_id
+    din_use_softmax: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    item_info_fields: 3
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 100
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 4
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DIN_Ebnerd_small_x1_002_bce8c14f:
+    accumulation_steps: 1
+    attention_dropout: 0.1
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    din_sequence_field: click_history
+    din_target_field: item_id
+    din_use_softmax: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-06
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    item_info_fields: 3
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 100
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 4
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DIN_Ebnerd_small_x1_003_03a0677b:
+    accumulation_steps: 1
+    attention_dropout: 0.1
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    din_sequence_field: click_history
+    din_target_field: item_id
+    din_use_softmax: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    item_info_fields: 3
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 100
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 4
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DIN_Ebnerd_small_x1_004_4f673aac:
+    accumulation_steps: 1
+    attention_dropout: 0.1
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    din_sequence_field: click_history
+    din_target_field: item_id
+    din_use_softmax: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    item_info_fields: 3
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 100
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 4
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DIN_Ebnerd_small_x1_005_500f0406:
+    accumulation_steps: 1
+    attention_dropout: 0.1
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    din_sequence_field: click_history
+    din_target_field: item_id
+    din_use_softmax: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    item_info_fields: 3
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 100
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 4
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DIN_Ebnerd_small_x1_006_c26af510:
+    accumulation_steps: 1
+    attention_dropout: 0.1
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    din_sequence_field: click_history
+    din_target_field: item_id
+    din_use_softmax: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    item_info_fields: 3
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 100
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 4
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DIN_Ebnerd_small_x1_007_1ab2200b:
+    accumulation_steps: 1
+    attention_dropout: 0.1
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    din_sequence_field: click_history
+    din_target_field: item_id
+    din_use_softmax: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    item_info_fields: 3
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 100
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 4
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DIN_Ebnerd_small_x1_008_66419bc3:
+    accumulation_steps: 1
+    attention_dropout: 0.1
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    din_sequence_field: click_history
+    din_target_field: item_id
+    din_use_softmax: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    item_info_fields: 3
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 100
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 4
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1

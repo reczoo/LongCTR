@@ -1,0 +1,78 @@
+base_config: ./config/din_config/
+base_expid: DIN_default
+dataset_id: KuaiRand_1K_x1
+
+dataset_config:
+    KuaiRand_1K_x1:
+        data_root: ./data/
+        data_format: parquet
+        train_data: ./data/KuaiRand_1K_x1/train.parquet
+        valid_data: ./data/KuaiRand_1K_x1/valid.parquet
+        test_data: ./data/KuaiRand_1K_x1/test.parquet
+        rebuild_dataset: False
+        feature_cols:
+            - {name: user_index, active: True, dtype: int, type: meta}
+            - {name: item_index, active: True, dtype: int, type: meta}
+            - {name: seq_len, active: True, dtype: int, type: meta}
+            - {name: video_id, active: True, dtype: str, type: categorical, vocab_size: 187545}
+            - {name: author_id, active: True, dtype: str, type: categorical, vocab_size: 87985}
+            - {name: video_type, active: True, dtype: str, type: categorical, vocab_size: 5}
+            - {name: upload_type, active: True, dtype: str, type: categorical, vocab_size: 29}
+            - {name: music_id, active: True, dtype: str, type: categorical, vocab_size: 24962}
+            - {name: music_type, active: True, dtype: str, type: categorical, vocab_size: 7}
+            - {name: tag, active: True, dtype: str, type: sequence, max_len: 3, vocab_size: 59}
+            - {name: hourmin, active: True, dtype: str, type: categorical, vocab_size: 26}
+            - {name: tab, active: True, dtype: str, type: categorical, vocab_size: 17}
+            - {name: user_active_degree, active: True, dtype: str, type: categorical, vocab_size: 9}
+            - {name: is_lowactive_period, active: True, dtype: str, type: categorical, vocab_size: 3}
+            - {name: is_live_streamer, active: True, dtype: str, type: categorical, vocab_size: 4}
+            - {name: is_video_author, active: True, dtype: str, type: categorical, vocab_size: 4}
+            - {name: follow_user_num_range, active: True, dtype: str, type: categorical, vocab_size: 10}
+            - {name: fans_user_num_range, active: True, dtype: str, type: categorical, vocab_size: 10}
+            - {name: friend_user_num_range, active: True, dtype: str, type: categorical, vocab_size: 9}
+            - {name: register_days_range, active: True, dtype: str, type: categorical, vocab_size: 9}
+            - {name: onehot_feat0, active: True, dtype: str, type: categorical, vocab_size: 4}
+            - {name: onehot_feat1, active: True, dtype: str, type: categorical, vocab_size: 9}
+            - {name: onehot_feat2, active: True, dtype: str, type: categorical, vocab_size: 25}
+            - {name: onehot_feat3, active: True, dtype: str, type: categorical, vocab_size: 396}
+            - {name: onehot_feat4, active: True, dtype: str, type: categorical, vocab_size: 15}
+            - {name: onehot_feat5, active: True, dtype: str, type: categorical, vocab_size: 7}
+            - {name: onehot_feat6, active: True, dtype: str, type: categorical, vocab_size: 5}
+            - {name: onehot_feat7, active: True, dtype: str, type: categorical, vocab_size: 39}
+            - {name: onehot_feat8, active: True, dtype: str, type: categorical, vocab_size: 285}
+            - {name: onehot_feat9, active: True, dtype: str, type: categorical, vocab_size: 9}
+            - {name: onehot_feat10, active: True, dtype: str, type: categorical, vocab_size: 7}
+            - {name: onehot_feat11, active: True, dtype: str, type: categorical, vocab_size: 5}
+            - {name: onehot_feat12, active: True, dtype: str, type: categorical, vocab_size: 4}
+            - {name: onehot_feat13, active: True, dtype: str, type: categorical, vocab_size: 4}
+            - {name: onehot_feat14, active: True, dtype: str, type: categorical, vocab_size: 4}
+            - {name: onehot_feat15, active: True, dtype: str, type: categorical, vocab_size: 4}
+            - {name: onehot_feat16, active: True, dtype: str, type: categorical, vocab_size: 4}
+            - {name: onehot_feat17, active: True, dtype: str, type: categorical, vocab_size: 4}
+            - {name: video_age, active: True, dtype: str, type: categorical, vocab_size: 7}
+            - {name: weekday, active: True, dtype: str, type: categorical, vocab_size: 7}
+        label_col: {name: is_click, dtype: float}
+
+
+tuner_space:
+    model_root: './checkpoints/'
+    embedding_dim: 32
+    dnn_hidden_units: [[1024, 512, 256]]
+    attention_hidden_units: [[512, 256]]
+    attention_hidden_activations: ReLU
+    dnn_activations: ReLU
+    attention_output_activation: null
+    din_use_softmax: False
+    embedding_regularizer: 1.e-8
+    attention_dropout: 0.2
+    net_dropout: 0.1
+    batch_norm: False
+    learning_rate: 1.e-3
+    batch_size: 8192
+    seed: 20242025
+    group_id: user_index
+    metrics: [[gAUC, AUC, logloss]]
+    monitor: gAUC
+    item_info_fields: 7
+    max_len: 20
+    early_stop_patience: 1

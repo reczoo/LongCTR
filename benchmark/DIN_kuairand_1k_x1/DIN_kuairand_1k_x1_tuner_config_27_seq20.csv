@@ -1,0 +1,1 @@
+ 20240506-094908,[command] python run_expid.py --config config/DIN_kuairand_1k_x1_tuner_config_27_seq20 --expid DIN_KuaiRand_1K_x1_001_c06e8c63 --gpu 7,[exp_id] DIN_KuaiRand_1K_x1_001_c06e8c63,[dataset_id] KuaiRand_1K_x1,[train] N.A.,[val] gAUC: 0.671884 - AUC: 0.720642 - logloss: 0.587838,[test] gAUC: 0.667079 - AUC: 0.708417 - logloss: 0.598895

@@ -1,0 +1,43 @@
+base_config: ./config/finalmlp_config/
+base_expid: FinalMLP_default
+dataset_id: MicroVideo1.7M_x2
+
+dataset_config:
+    MicroVideo1.7M_x2:
+        data_root: ./data/
+        data_format: parquet
+        train_data: ./data/MicroVideo1.7M_x2/train.parquet
+        valid_data: ./data/MicroVideo1.7M_x2/valid.parquet
+        test_data: ./data/MicroVideo1.7M_x2/test.parquet
+        user_info: ./data/MicroVideo1.7M_x2/user_info.parquet
+        item_info: ./data/MicroVideo1.7M_x2/item_info.parquet
+        rebuild_dataset: False
+        feature_cols:
+            - {name: user_index, active: True, dtype: int, type: meta}
+            - {name: item_index, active: True, dtype: int, type: meta}
+            - {name: seq_len, active: True, dtype: int, type: meta}
+            - {name: item_id, active: True, dtype: int, type: categorical, vocab_size: 24323, source: item}
+            - {name: cate_id, active: True, dtype: int, type: categorical, vocab_size: 514, source: item}
+            - {name: image_emb_dim64, active: True, dtype: float, type: embedding, source: item, 
+               embedding_dim: 64, feature_encoder: "nn.Identity()"}
+        label_col: {name: is_click, dtype: float}
+
+tuner_space:
+    model_root: './checkpoints/'
+    embedding_dim: 64
+    mlp1_batch_norm: True
+    mlp2_batch_norm: True
+    mlp1_hidden_units: [[1024, 512, 256]]
+    mlp2_hidden_units: [[1024, 512, 256], [1024, 512], [1024, 1024], [512, 512]]
+    mlp1_dropout: 0.2
+    mlp2_dropout: [0.3, 0.2]
+    use_fs: False
+    num_heads: [2, 8, 32]
+    embedding_regularizer: 1.e-5
+    learning_rate: 1.e-3
+    batch_size: 8192
+    seed: 20242025
+    group_id: user_index
+    metrics: [[gAUC, AUC, logloss]]
+    monitor: {"gAUC": 1, "AUC": 1}
+    max_len: 200

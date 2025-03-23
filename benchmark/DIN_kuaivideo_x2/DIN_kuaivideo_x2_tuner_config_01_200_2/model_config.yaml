@@ -1,0 +1,320 @@
+DIN_KuaiVideo_x2_005_164277af:
+    accumulation_steps: 1
+    attention_dropout: 0.1
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: KuaiVideo_x2
+    debug_mode: false
+    din_use_softmax: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 200
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_root: ./checkpoints/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 4
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DIN_KuaiVideo_x2_006_7458fc65:
+    accumulation_steps: 4
+    attention_dropout: 0.1
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: KuaiVideo_x2
+    debug_mode: false
+    din_use_softmax: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 200
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_root: ./checkpoints/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 4
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DIN_KuaiVideo_x2_007_76a9bf26:
+    accumulation_steps: 1
+    attention_dropout: 0.1
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 2048
+    dataset_id: KuaiVideo_x2
+    debug_mode: false
+    din_use_softmax: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 200
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_root: ./checkpoints/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 4
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DIN_KuaiVideo_x2_008_15d389dc:
+    accumulation_steps: 4
+    attention_dropout: 0.1
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 2048
+    dataset_id: KuaiVideo_x2
+    debug_mode: false
+    din_use_softmax: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 200
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_root: ./checkpoints/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 4
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DIN_KuaiVideo_x2_009_8f2a2a08:
+    accumulation_steps: 1
+    attention_dropout: 0.1
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: KuaiVideo_x2
+    debug_mode: false
+    din_use_softmax: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 200
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_root: ./checkpoints/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 4
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DIN_KuaiVideo_x2_010_c17d95aa:
+    accumulation_steps: 4
+    attention_dropout: 0.1
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: KuaiVideo_x2
+    debug_mode: false
+    din_use_softmax: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 200
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_root: ./checkpoints/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 4
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DIN_KuaiVideo_x2_011_3059dca9:
+    accumulation_steps: 1
+    attention_dropout: 0.1
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 2048
+    dataset_id: KuaiVideo_x2
+    debug_mode: false
+    din_use_softmax: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 200
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_root: ./checkpoints/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 4
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1
+DIN_KuaiVideo_x2_012_f78c20d1:
+    accumulation_steps: 4
+    attention_dropout: 0.1
+    attention_hidden_activations: ReLU
+    attention_hidden_units: [512, 256]
+    attention_output_activation: null
+    batch_norm: false
+    batch_size: 2048
+    dataset_id: KuaiVideo_x2
+    debug_mode: false
+    din_use_softmax: false
+    dnn_activations: ReLU
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0005
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 200
+    metrics: [gAUC, AUC, logloss]
+    model: DIN
+    model_root: ./checkpoints/
+    monitor: gAUC
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_workers: 4
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    shuffle: true
+    task: binary_classification
+    use_features: null
+    verbose: 1

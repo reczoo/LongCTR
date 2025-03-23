@@ -1,0 +1,62 @@
+base_config: ./config/sim_config/
+base_expid: SIM_default
+dataset_id: Ebnerd_small_x1
+
+dataset_config:
+    Ebnerd_small_x1:
+        data_root: ./data/
+        data_format: parquet
+        train_data: ./data/Ebnerd_small_x1/train.parquet
+        valid_data: ./data/Ebnerd_small_x1/valid.parquet
+        test_data: ./data/Ebnerd_small_x1/test.parquet
+        user_info: ./data/Ebnerd_small_x1/user_info.parquet
+        item_info: ./data/Ebnerd_small_x1/item_info.parquet
+        rebuild_dataset: False
+        feature_cols:
+            - {name: user_index, active: True, dtype: int, type: meta}
+            - {name: item_index, active: True, dtype: int, type: meta}
+            - {name: seq_len, active: True, dtype: int, type: meta}
+            - {name: user_id, active: True, dtype: str, type: categorical, vocab_size: 14209}
+            - {name: article_id, active: True, dtype: str, type: categorical, vocab_size: 2218, source: item}
+            - {name: trigger_id, active: True, dtype: str, type: categorical, vocab_size: 1471}
+            - {name: device_type, active: True, dtype: str, type: categorical, vocab_size: 5}
+            - {name: is_sso_user, active: True, dtype: str, type: categorical, vocab_size: 4}
+            - {name: gender, active: True, dtype: str, type: categorical, vocab_size: 4}
+            - {name: postcode, active: True, dtype: str, type: categorical, vocab_size: 7}
+            - {name: age, active: True, dtype: str, type: categorical, vocab_size: 11}
+            - {name: is_subscriber, active: True, dtype: str, type: categorical, vocab_size: 4}
+            - {name: premium, active: True, dtype: str, type: categorical, vocab_size: 4}
+            - {name: article_type, active: True, dtype: str, type: categorical, vocab_size: 12}
+            - {name: ner_clusters, active: True, dtype: str, type: sequence, max_len: 5, vocab_size: 10618}
+            - {name: topics, active: True, dtype: str, type: sequence, max_len: 5, vocab_size: 80}
+            - {name: category, active: True, dtype: str, type: categorical, vocab_size: 16, source: item}
+            - {name: subcategory, active: True, dtype: str, type: sequence, max_len: 5, vocab_size: 91, source: item}
+            - {name: sentiment_label, active: True, dtype: str, type: categorical, vocab_size: 5}
+            - {name: publish_days, active: True, dtype: str, type: categorical, vocab_size: 33}
+            - {name: publish_hours, active: True, dtype: str, type: categorical, vocab_size: 27}
+            - {name: impression_hour, active: True, dtype: str, type: categorical, vocab_size: 26}
+            - {name: impression_weekday, active: True, dtype: str, type: categorical, vocab_size: 9}
+        label_col: {name: click, dtype: float}
+
+
+tuner_space:
+    model_root: './checkpoints/'
+    embedding_dim: 64
+    dnn_hidden_units: [[1024, 512, 256]]
+    attention_dim: 128
+    num_heads: 1
+    attention_dropout: 0.1
+    alpha: 1
+    beta: 1
+    topk: [50, 20, 10, 5]
+    short_seq_len: 50
+    net_dropout: 0.1
+    embedding_regularizer: [1.e-5, 1.e-4, 1.e-3, 1.e-2]
+    batch_norm: True
+    learning_rate: 1.e-3
+    batch_size: 8192
+    seed: 20242025
+    group_id: user_index
+    metrics: [[gAUC, AUC, logloss]]
+    monitor: {"gAUC": 1, "AUC": 1}
+    max_len: 100

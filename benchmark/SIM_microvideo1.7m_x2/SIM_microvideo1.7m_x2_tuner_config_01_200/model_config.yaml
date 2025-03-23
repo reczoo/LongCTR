@@ -1,0 +1,129 @@
+SIM_MicroVideo1.7M_x2_001_2738e4d6:
+    accumulation_steps: 1
+    alpha: 1
+    attention_dim: 256
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    beta: 1
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    gsu_type: soft
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 200
+    metrics: [gAUC, AUC, logloss]
+    model: SIM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 50
+    use_features: null
+    verbose: 1
+SIM_MicroVideo1.7M_x2_002_1a6ff187:
+    accumulation_steps: 1
+    alpha: 1
+    attention_dim: 256
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    beta: 1
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    gsu_type: soft
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 200
+    metrics: [gAUC, AUC, logloss]
+    model: SIM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 20
+    use_features: null
+    verbose: 1
+SIM_MicroVideo1.7M_x2_003_14eb4cc4:
+    accumulation_steps: 1
+    alpha: 1
+    attention_dim: 256
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    beta: 1
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    gsu_type: soft
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 200
+    metrics: [gAUC, AUC, logloss]
+    model: SIM
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 10
+    use_features: null
+    verbose: 1

@@ -1,0 +1,656 @@
+TWIN_Ebnerd_small_x1_001_b2e4c1a7:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 50
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 50
+    use_features: null
+    verbose: 1
+TWIN_Ebnerd_small_x1_002_3a56bb7a:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 50
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 20
+    use_features: null
+    verbose: 1
+TWIN_Ebnerd_small_x1_003_3b28248a:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 50
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 10
+    use_features: null
+    verbose: 1
+TWIN_Ebnerd_small_x1_004_3ea5c6eb:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 50
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 5
+    use_features: null
+    verbose: 1
+TWIN_Ebnerd_small_x1_005_38d00b6d:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 50
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 50
+    use_features: null
+    verbose: 1
+TWIN_Ebnerd_small_x1_006_9800b180:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 50
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 20
+    use_features: null
+    verbose: 1
+TWIN_Ebnerd_small_x1_007_b067beec:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 50
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 10
+    use_features: null
+    verbose: 1
+TWIN_Ebnerd_small_x1_008_610e0b4c:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.0001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 50
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 5
+    use_features: null
+    verbose: 1
+TWIN_Ebnerd_small_x1_009_610e0b4c:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 50
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 50
+    use_features: null
+    verbose: 1
+TWIN_Ebnerd_small_x1_010_374299d6:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 50
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 20
+    use_features: null
+    verbose: 1
+TWIN_Ebnerd_small_x1_011_dc83d414:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 50
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 10
+    use_features: null
+    verbose: 1
+TWIN_Ebnerd_small_x1_012_9625d008:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.001
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 50
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 5
+    use_features: null
+    verbose: 1
+TWIN_Ebnerd_small_x1_013_9625d008:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 50
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 50
+    use_features: null
+    verbose: 1
+TWIN_Ebnerd_small_x1_014_10ac686a:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 50
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 20
+    use_features: null
+    verbose: 1
+TWIN_Ebnerd_small_x1_015_5da2a8ca:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 50
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 10
+    use_features: null
+    verbose: 1
+TWIN_Ebnerd_small_x1_016_0f54efbd:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 8192
+    dataset_id: Ebnerd_small_x1
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 0.01
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 50
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 5
+    use_features: null
+    verbose: 1

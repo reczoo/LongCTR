@@ -1,0 +1,47 @@
+base_config: ./config/transact_config/
+base_expid: TransAct_default
+dataset_id: MicroVideo1.7M_x2
+
+dataset_config:
+    MicroVideo1.7M_x2:
+        data_root: ./data/
+        data_format: parquet
+        train_data: ./data/MicroVideo1.7M_x2/train.parquet
+        valid_data: ./data/MicroVideo1.7M_x2/valid.parquet
+        test_data: ./data/MicroVideo1.7M_x2/test.parquet
+        user_info: ./data/MicroVideo1.7M_x2/user_info.parquet
+        item_info: ./data/MicroVideo1.7M_x2/item_info.parquet
+        rebuild_dataset: False
+        feature_cols:
+            - {name: user_index, active: True, dtype: int, type: meta}
+            - {name: item_index, active: True, dtype: int, type: meta}
+            - {name: seq_len, active: True, dtype: int, type: meta}
+            - {name: item_id, active: True, dtype: int, type: categorical, vocab_size: 24323, source: item}
+            - {name: cate_id, active: True, dtype: int, type: categorical, vocab_size: 514, source: item}
+            - {name: image_emb_dim64, active: True, dtype: float, type: embedding, source: item, embedding_dim: 64}
+        label_col: {name: is_click, dtype: float}
+
+tuner_space:
+    model_root: './checkpoints/'
+    embedding_dim: 64
+    dcn_cross_layers: 4
+    dcn_hidden_units: [[1024, 512, 256]]
+    mlp_hidden_units: [[]]
+    num_heads: [1, 2]
+    transformer_layers: [1, 2]
+    dim_feedforward: 512
+    first_k_cols: [1, 2]
+    use_time_window_mask: False
+    concat_max_pool: False
+    transformer_dropout: 0.1
+    embedding_regularizer: 1.e-5
+    net_dropout: 0.1
+    batch_norm: True
+    learning_rate: 5.e-4
+    batch_size: 1024
+    seed: 20242025
+    group_id: user_index
+    metrics: [[gAUC, AUC, logloss]]
+    monitor: {"gAUC": 1, "AUC": 1}
+    max_len: 500
+    accumulation_steps: [1, 2]

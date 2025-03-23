@@ -1,0 +1,1 @@
+ 20240505-224902,[command] python run_expid.py --config config/DIN_kuairand_1k_x1_tuner_config_21_seq500 --expid DIN_KuaiRand_1K_x1_001_537d5658 --gpu 6,[exp_id] DIN_KuaiRand_1K_x1_001_537d5658,[dataset_id] KuaiRand_1K_x1,[train] N.A.,[val] gAUC: 0.672930 - AUC: 0.738882 - logloss: 0.580805,[test] gAUC: 0.668182 - AUC: 0.730335 - logloss: 0.591002

@@ -1,0 +1,656 @@
+TWIN_MicroVideo1.7M_x2_001_24d06e1c:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 1000
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 100
+    use_features: null
+    verbose: 1
+TWIN_MicroVideo1.7M_x2_002_4719a453:
+    Kc_cross_features: 0
+    accumulation_steps: 2
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 1000
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 100
+    use_features: null
+    verbose: 1
+TWIN_MicroVideo1.7M_x2_003_9a800fc0:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 1000
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 50
+    use_features: null
+    verbose: 1
+TWIN_MicroVideo1.7M_x2_004_18ae87f1:
+    Kc_cross_features: 0
+    accumulation_steps: 2
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 1000
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 50
+    use_features: null
+    verbose: 1
+TWIN_MicroVideo1.7M_x2_005_31abf8b5:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 1000
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 20
+    use_features: null
+    verbose: 1
+TWIN_MicroVideo1.7M_x2_006_f9a347b8:
+    Kc_cross_features: 0
+    accumulation_steps: 2
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 1000
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 20
+    use_features: null
+    verbose: 1
+TWIN_MicroVideo1.7M_x2_007_0c0014ac:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 1000
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 10
+    use_features: null
+    verbose: 1
+TWIN_MicroVideo1.7M_x2_008_31abf8b5:
+    Kc_cross_features: 0
+    accumulation_steps: 2
+    attention_dim: 128
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 1000
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 10
+    use_features: null
+    verbose: 1
+TWIN_MicroVideo1.7M_x2_009_e34b5ff6:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 256
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 1000
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 100
+    use_features: null
+    verbose: 1
+TWIN_MicroVideo1.7M_x2_010_397ac097:
+    Kc_cross_features: 0
+    accumulation_steps: 2
+    attention_dim: 256
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 1000
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 100
+    use_features: null
+    verbose: 1
+TWIN_MicroVideo1.7M_x2_011_1c80a8a1:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 256
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 1000
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 50
+    use_features: null
+    verbose: 1
+TWIN_MicroVideo1.7M_x2_012_0135a770:
+    Kc_cross_features: 0
+    accumulation_steps: 2
+    attention_dim: 256
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 1000
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 50
+    use_features: null
+    verbose: 1
+TWIN_MicroVideo1.7M_x2_013_7c5d1cbb:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 256
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 1000
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 20
+    use_features: null
+    verbose: 1
+TWIN_MicroVideo1.7M_x2_014_a9fc48aa:
+    Kc_cross_features: 0
+    accumulation_steps: 2
+    attention_dim: 256
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 1000
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 20
+    use_features: null
+    verbose: 1
+TWIN_MicroVideo1.7M_x2_015_074af0fa:
+    Kc_cross_features: 0
+    accumulation_steps: 1
+    attention_dim: 256
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 1000
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 10
+    use_features: null
+    verbose: 1
+TWIN_MicroVideo1.7M_x2_016_7c5d1cbb:
+    Kc_cross_features: 0
+    accumulation_steps: 2
+    attention_dim: 256
+    attention_dropout: 0.1
+    batch_norm: true
+    batch_size: 2048
+    dataset_id: MicroVideo1.7M_x2
+    debug_mode: false
+    dnn_activations: relu
+    dnn_hidden_units: [1024, 512, 256]
+    early_stop_patience: 2
+    embedding_dim: 64
+    embedding_regularizer: 1.0e-05
+    epochs: 100
+    eval_steps: null
+    feature_config: null
+    feature_specs: null
+    group_id: user_index
+    learning_rate: 0.001
+    loss: binary_crossentropy
+    max_len: 1000
+    metrics: [gAUC, AUC, logloss]
+    model: TWIN
+    model_root: ./checkpoints/
+    monitor: {AUC: 1, gAUC: 1}
+    monitor_mode: max
+    net_dropout: 0.1
+    net_regularizer: 0
+    num_heads: 1
+    num_workers: 3
+    optimizer: adam
+    pickle_feature_encoder: true
+    save_best_only: true
+    seed: 20242025
+    short_seq_len: 50
+    shuffle: true
+    task: binary_classification
+    topk: 10
+    use_features: null
+    verbose: 1

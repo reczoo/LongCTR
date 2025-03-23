@@ -1,0 +1,37 @@
+Ebnerd_small_x1:
+    data_format: parquet
+    data_root: ./data/
+    feature_cols:
+    - {active: true, dtype: int, name: user_index, type: meta}
+    - {active: true, dtype: int, name: item_index, type: meta}
+    - {active: true, dtype: int, name: seq_len, type: meta}
+    - {active: true, dtype: str, name: user_id, type: categorical, vocab_size: 14209}
+    - {active: true, dtype: str, name: article_id, source: item, type: categorical,
+        vocab_size: 2218}
+    - {active: true, dtype: str, name: trigger_id, type: categorical, vocab_size: 1471}
+    - {active: true, dtype: str, name: device_type, type: categorical, vocab_size: 5}
+    - {active: true, dtype: str, name: is_sso_user, type: categorical, vocab_size: 4}
+    - {active: true, dtype: str, name: gender, type: categorical, vocab_size: 4}
+    - {active: true, dtype: str, name: postcode, type: categorical, vocab_size: 7}
+    - {active: true, dtype: str, name: age, type: categorical, vocab_size: 11}
+    - {active: true, dtype: str, name: is_subscriber, type: categorical, vocab_size: 4}
+    - {active: true, dtype: str, name: premium, type: categorical, vocab_size: 4}
+    - {active: true, dtype: str, name: article_type, type: categorical, vocab_size: 12}
+    - {active: true, dtype: str, max_len: 5, name: ner_clusters, type: sequence, vocab_size: 10618}
+    - {active: true, dtype: str, max_len: 5, name: topics, type: sequence, vocab_size: 80}
+    - {active: true, dtype: str, name: category, source: item, type: categorical,
+        vocab_size: 16}
+    - {active: true, dtype: str, max_len: 5, name: subcategory, source: item, type: sequence,
+        vocab_size: 91}
+    - {active: true, dtype: str, name: sentiment_label, type: categorical, vocab_size: 5}
+    - {active: true, dtype: str, name: publish_days, type: categorical, vocab_size: 33}
+    - {active: true, dtype: str, name: publish_hours, type: categorical, vocab_size: 27}
+    - {active: true, dtype: str, name: impression_hour, type: categorical, vocab_size: 26}
+    - {active: true, dtype: str, name: impression_weekday, type: categorical, vocab_size: 9}
+    item_info: ./data/Ebnerd_small_x1/item_info.parquet
+    label_col: {dtype: float, name: click}
+    rebuild_dataset: false
+    test_data: ./data/Ebnerd_small_x1/test.parquet
+    train_data: ./data/Ebnerd_small_x1/train.parquet
+    user_info: ./data/Ebnerd_small_x1/user_info.parquet
+    valid_data: ./data/Ebnerd_small_x1/valid.parquet

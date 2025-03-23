@@ -1,0 +1,16 @@
+MicroVideo1.7M_x2:
+    data_format: parquet
+    data_root: ./data/
+    feature_cols:
+    - {active: true, dtype: int, name: user_index, type: meta}
+    - {active: true, dtype: int, name: item_index, type: meta}
+    - {active: true, dtype: int, name: seq_len, type: meta}
+    - {active: true, dtype: int, name: item_id, source: item, type: categorical, vocab_size: 24323}
+    - {active: true, dtype: int, name: cate_id, source: item, type: categorical, vocab_size: 514}
+    - {active: true, dtype: float, embedding_dim: 64, name: image_emb_dim64, source: item,
+        type: embedding}
+    label_col: {dtype: float, name: is_click}
+    rebuild_dataset: false
+    test_data: ./data/MicroVideo1.7M_x2/test.parquet
+    train_data: ./data/MicroVideo1.7M_x2/train.parquet
+    valid_data: ./data/MicroVideo1.7M_x2/valid.parquet

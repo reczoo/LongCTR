@@ -1,0 +1,17 @@
+KuaiVideo_x2:
+    data_format: parquet
+    data_root: ./data/
+    feature_cols:
+    - {active: true, dtype: int, name: user_index, type: meta}
+    - {active: true, dtype: int, name: item_index, type: meta}
+    - {active: true, dtype: int, name: seq_len, type: meta}
+    - {active: true, dtype: int, name: item_id, source: item, type: categorical, vocab_size: 101790}
+    - {active: true, dtype: float, embedding_dim: 64, feature_encoder: nn.Identity(),
+        name: image_emb_dim64, source: item, type: embedding}
+    item_info: ./data/KuaiVideo_x2/item_info.parquet
+    label_col: {dtype: float, name: is_click}
+    rebuild_dataset: false
+    test_data: ./data/KuaiVideo_x2/test.parquet
+    train_data: ./data/KuaiVideo_x2/train.parquet
+    user_info: ./data/KuaiVideo_x2/user_info.parquet
+    valid_data: ./data/KuaiVideo_x2/valid.parquet

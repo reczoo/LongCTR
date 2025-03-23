@@ -1,0 +1,1 @@
+ 20240719-210455,[command] python run_expid.py --config config/DIEN_ebnerd_small_x1/DIEN_ebnerd_small_x1_tuner_config_03_200 --expid DIEN_Ebnerd_small_x1_003_288aa552 --gpu 2,[exp_id] DIEN_Ebnerd_small_x1_003_288aa552,[dataset_id] Ebnerd_small_x1,[train] N.A.,[val] gAUC: 0.705602 - AUC: 0.704368 - logloss: 0.275614,[test] gAUC: 0.705371 - AUC: 0.704578 - logloss: 0.274902
