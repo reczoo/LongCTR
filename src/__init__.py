@@ -4,3 +4,7 @@ from .DIEN import DIEN
 from .FinalMLP import FinalMLP
 from .ETA import ETA
 from .MIRRN import MIRRN
+from .TransAct import TransAct
+from .SIM import SIM
+from .SDIM import SDIM
+from .TWIN import TWIN
