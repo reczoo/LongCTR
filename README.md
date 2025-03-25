@@ -10,7 +10,7 @@ A Long Sequence Modeling Benchmark for CTR Prediction
 
 | No  | Model                                    | Publication                                                                                                                                                                                                                                       
 |:---:|:----------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| 1   |  [DCN-V2](./src/DCNv2.py)               | [DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems](https://arxiv.org/abs/2008.13535), WWW 2021.                                                              
+| 1   |  [DCNv2](./src/DCNv2.py)               | [DCN V2: Improved Deep & Cross Network and Practical Lessons for Web-scale Learning to Rank Systems](https://arxiv.org/abs/2008.13535), WWW 2021.                                                              
 | 2   |  [FinalMLP](./src/FinalMLP.py)                  | [FinalMLP: An Enhanced Two-Stream MLP Model for CTR Prediction](https://arxiv.org/abs/2304.00902), AAAI 2023.    
 | 3   |  [DIN](./src/DIN.py)                  | [Deep Interest Network for Click-Through Rate Prediction](https://www.kdd.org/kdd2018/accepted-papers/view/deep-interest-network-for-click-through-rate-prediction), KDD 2018.    
 | 4   |  [DIEN](./src/DIEN.py)                  | [Deep Interest Evolution Network for Click-Through Rate Prediction](https://arxiv.org/abs/1809.03672), AAAI 2019.  
@@ -22,8 +22,8 @@ A Long Sequence Modeling Benchmark for CTR Prediction
 | 10   |  [MIRRN](./src/MIRRN.py)                  | [Multi-granularity Interest Retrieval and Refinement Network for Long-Term User Behavior Modeling in CTR Prediction](https://arxiv.org/abs/2411.15005), in KDD 2025.  
 
 ## Benchmarking Results
-The DIN model with a sequence length of 50 serves as the global baseline, with other results presented as absolute values and percentage improvements. 
 
+In the following, we present benchmarking results for long sequence models across various sequence lengths in CTR prediction. Specifically, we establish the DIN model with a sequence length of 50 as the global baseline and report the relative improvements of other models compared to this baseline. Each row illustrates the performance variation of a specific model as the sequence length increases. Each column compares the performance of different models at a given sequence length, with the best performance in each column highlighted by underlining and the global best results highlighted in bold.
 
 
 ### MicroVideo
@@ -90,16 +90,16 @@ The DIN model with a sequence length of 50 serves as the global baseline, with o
     </tr>
     <tr>
       <td>DIEN<br></td>
-      <td><u>70.11/+2.0%</u></td>
+      <td><ins>70.11/+2.0%</ins></td>
       <td>70.50/+2.6%</td>
       <td>71.19/+3.6%</td>
       <td>71.80/+4.5%</td>
-      <td><strong><u>72.20/+5.0%</u></strong></td>
-      <td><u>70.63/+1.3%</u></td>
-      <td><u>71.07/+1.9%</u></td>
-      <td><u>71.15/+2.0%</u></td>
+      <td><strong><ins>72.20/+5.0%</ins></strong></td>
+      <td><ins>70.63/+1.3%</ins></td>
+      <td><ins>71.07/+1.9%</ins></td>
+      <td><ins>71.15/+2.0%</ins></td>
       <td>71.32/+2.3%</td>
-      <td><u>71.41/+2.4%</u></td>
+      <td><ins>71.41/+2.4%</ins></td>
     </tr>
     <tr>
       <td>TransAct</td>
@@ -137,14 +137,14 @@ The DIN model with a sequence length of 50 serves as the global baseline, with o
       <td>69.76/+0.0%</td>
       <td>69.92/+0.3%</td>
       <td>70.02/+0.4%</td>
-      <td><strong><u>71.45/+2.5%</u></strong></td>
+      <td><strong><ins>71.45/+2.5%</ins></strong></td>
       <td>71.39/+2.4%</td>
     </tr>
     <tr>
       <td>SDIM</td>
       <td>69.88/+1.7%</td>
       <td>70.81/+3.0%</td>
-      <td><u>71.51/+4.0%</u></td>
+      <td><ins>71.51/+4.0%</ins></td>
       <td>71.53/+4.1%</td>
       <td>71.73/+4.3%</td>
       <td>69.68/-0.1%</td>
@@ -158,7 +158,7 @@ The DIN model with a sequence length of 50 serves as the global baseline, with o
       <td>69.84/+1.6%</td>
       <td>70.54/+2.6%</td>
       <td>70.57/+2.7%</td>
-      <td><u>71.86/+4.5%</u></td>
+      <td><ins>71.86/+4.5%</ins></td>
       <td>71.89/+4.6%</td>
       <td>69.67/-0.1%</td>
       <td>69.79/+0.1%</td>
@@ -169,7 +169,7 @@ The DIN model with a sequence length of 50 serves as the global baseline, with o
     <tr>
       <td>MIRRN</td>
       <td>70.05/+1.9%</td>
-      <td><u>70.94/+3.2%</u></td>
+      <td><ins>70.94/+3.2%</ins></td>
       <td>71.15/+3.5%</td>
       <td>71.31/+3.7%</td>
       <td>71.30/+3.7%</td>
@@ -220,16 +220,16 @@ The DIN model with a sequence length of 50 serves as the global baseline, with o
     </tr>
     <tr>
       <td>FinalMLP</td>
-      <td><u>69.23/+1.5%</u></td>
-      <td><u>69.75/+2.3%</u></td>
-      <td><u>70.31/+3.1%</u></td>
-      <td><u>70.40/+3.2%</u></td>
-      <td><strong><u>70.64/+3.6%</u></strong></td>
-      <td><u>66.90/+0.2%</u></td>
+      <td><ins>69.23/+1.5%</ins></td>
+      <td><ins>69.75/+2.3%</ins></td>
+      <td><ins>70.31/+3.1%</ins></td>
+      <td><ins>70.40/+3.2%</ins></td>
+      <td><strong><ins>70.64/+3.6%</ins></strong></td>
+      <td><ins>66.90/+0.2%</ins></td>
       <td>67.11/+0.5%</td>
       <td>67.18/+0.6%</td>
       <td>67.28/+0.8%</td>
-      <td><strong><u>67.40/+1.0%</u></strong></td>
+      <td><strong><ins>67.40/+1.0%</ins></strong></td>
     </tr>
     <tr>
       <td>DIN</td>
@@ -291,9 +291,9 @@ The DIN model with a sequence length of 50 serves as the global baseline, with o
       <td>69.22/+1.5%</td>
       <td>69.26/+1.5%</td>
       <td>66.66/-0.1%</td>
-      <td><u>67.12/+0.5%</u></td>
-      <td><u>67.25/+0.7%</u></td>
-      <td><u>67.38/+0.9%</u></td>
+      <td><ins>67.12/+0.5%</ins></td>
+      <td><ins>67.25/+0.7%</ins></td>
+      <td><ins>67.38/+0.9%</ins></td>
       <td>67.31/+0.8%</td>
     </tr>
     <tr>
@@ -307,7 +307,7 @@ The DIN model with a sequence length of 50 serves as the global baseline, with o
       <td>66.75/+0.0%</td>
       <td>66.93/+0.3%</td>
       <td>67.10/+0.5%</td>
-      <td><strong><u>67.40/+1.0%</u></strong></td>
+      <td><strong><ins>67.40/+1.0%</ins></strong></td>
     </tr>
     <tr>
       <td>TWIN</td>
@@ -382,23 +382,23 @@ The DIN model with a sequence length of 50 serves as the global baseline, with o
       <td>71.38/+1.3%</td>
       <td>71.51/+1.5%</td>
       <td>69.90/-0.1%</td>
-      <td><u>70.47/+0.7%</u></td>
+      <td><ins>70.47/+0.7%</ins></td>
       <td>70.50/+0.7%</td>
       <td>70.80/+1.2%</td>
       <td>70.92/+1.3%</td>
     </tr>
     <tr>
       <td>DIN</td>
-      <td><u>70.44/+0.0%</u></td>
-      <td><u>71.04/+0.9%</u></td>
-      <td><u>71.20/+1.1%</u></td>
-      <td><u>71.86/+2.0%</u></td>
-      <td><strong><u>71.92/+2.1%</u></strong></td>
-      <td><u>69.98/+0.0%</u></td>
+      <td><ins>70.44/+0.0%</ins></td>
+      <td><ins>71.04/+0.9%</ins></td>
+      <td><ins>71.20/+1.1%</ins></td>
+      <td><ins>71.86/+2.0%</ins></td>
+      <td><strong><ins>71.92/+2.1%</ins></strong></td>
+      <td><ins>69.98/+0.0%</ins></td>
       <td>70.45/+0.7%</td>
       <td>70.60/+0.9%</td>
-      <td><u>71.23/+1.8%</u></td>
-      <td><strong><u>71.28/+1.9%</u></strong></td>
+      <td><ins>71.23/+1.8%</ins></td>
+      <td><strong><ins>71.28/+1.9%</ins></strong></td>
     </tr>
     <tr>
       <td>DIEN</td>
@@ -422,7 +422,7 @@ The DIN model with a sequence length of 50 serves as the global baseline, with o
       <td>71.45/+1.4%</td>
       <td>69.87/-0.2%</td>
       <td>70.29/+0.4%</td>
-      <td><u>70.64/+0.9%</u></td>
+      <td><ins>70.64/+0.9%</ins></td>
       <td>70.71/+1.0%</td>
       <td>70.84/+1.2%</td>
     </tr>
@@ -493,3 +493,13 @@ The DIN model with a sequence length of 50 serves as the global baseline, with o
     </tr>
   </tbody>
 </table>
+
+
+### How to Reproduce
+
+To reproduce the results, please refer to the `benchmark` folder for the necessary configurations and running logs. For example, you can execute the following script to run SIM on MicroVideo with a sequence length of 50 (where tag=005 indicates the best-tuned hyper-parameters):
+
+```
+python run_param_tuner.py --config benchmark/SIM_microvideo1.7m_x2/SIM_microvideo1.7m_x2_tuner_config_01_50.yaml --tag 005 --gpu 0
+
+```
