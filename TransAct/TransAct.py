@@ -22,7 +22,6 @@
     [Code] https://github.com/pinterest/transformer_user_action
 """
 
-
 import torch
 from torch import nn
 import numpy as np

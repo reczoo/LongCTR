@@ -24,13 +24,12 @@ from datetime import datetime
 from fuxictr.utils import load_config, set_logger, print_to_json, print_to_list
 from fuxictr.features import FeatureMap
 from fuxictr.pytorch.dataloaders import RankDataLoader
-import src as model_zoo
-from src.longctr_dataloader import LongCTRDataLoader
+from __init__ import *
+from longctr_dataloader import LongCTRDataLoader
 from fuxictr.pytorch.torch_utils import seed_everything
 from fuxictr.preprocess import FeatureProcessor, build_dataset
 import gc
 import argparse
-import os
 from pathlib import Path
 
 
@@ -60,7 +59,7 @@ if __name__ == '__main__':
     feature_map.load(feature_map_json, params)
     logging.info("Feature specs: " + print_to_json(feature_map.features))
     
-    model_class = getattr(model_zoo, params['model'])
+    model_class = eval(params['model'])
     model = model_class(feature_map, **params)
     model.count_parameters() # print number of parameters used in model
 
